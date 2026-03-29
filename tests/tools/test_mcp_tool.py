@@ -1546,6 +1546,8 @@ class TestUtilityToolRegistration:
 import math
 import time
 
+pytest.importorskip("mcp", reason="mcp package is required for sampling type tests")
+
 from mcp.types import (
     CreateMessageResult,
     CreateMessageResultWithTools,
